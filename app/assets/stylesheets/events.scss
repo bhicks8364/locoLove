@@ -1,0 +1,55 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.desc {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(228, 228, 228, 0.88);
+    margin: auto;
+    margin-top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+// CALENDAR STYLES
+.simple-calendar {
+    background-color: rgba(252, 250, 251, 0.8);
+    padding:18px;
+  .day {}
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {}
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {
+      background-color: rgba(251, 192, 131, 0.75);
+    //   border: solid 3px black;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  }
+.has-events:hover {
+    border: solid 3px black;
+}
+  .event-title > a {
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+  }
+}

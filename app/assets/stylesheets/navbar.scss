@@ -1,0 +1,15 @@
+.navbar-inverse {
+    background-color: rgba(54, 65, 76, 0.93);
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #ccc;
+}

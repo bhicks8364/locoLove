@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "simple_calendar";
+@import "events";
+@import "navbar";
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Covered+By+Your+Grace|Josefin+Sans|Rock+Salt|Lato);
+$font-family-sans-serif: 'Indie Flower', sans-serif;
+
+
+body { padding-top: 70px;}
+html { padding-top: -70px;}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: url(bubble_bg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // color: white;
+    // background-color: rgb(34, 34, 34);
+    background-color: #ffffff;
+    // background: #ffffff url("feature3.jpg") no-repeat center top;
+    // background-size: cover;
+    // padding-top: 90px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#main-content {
+    width: 80%;
+}
+
+.music-notes-bg {
+    /* The image used */
+    background-image: url("musical-notes.png");
+    background-color: #00ff00;
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+    min-height: 400px;
+}
+// .music-gif-bg {
+//     /* The image used */
+//     background-image: url("music_slant.gif");
+//     // background-color: #00ff00;
+//     /* Full height */
+//     height: 100%; 
+
+//     /* Center and scale the image nicely */
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+.narrowed {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+.grace {
+    font-family: 'Covered By Your Grace', cursive;
+}
+.rock {
+    font-family: 'Rock Salt', cursive;
+}
+.shadow {
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.screenshot {
+    max-width: 550px;
+}
+
+.name {
+    margin-left: 15px;
+}

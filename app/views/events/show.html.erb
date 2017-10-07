@@ -1,0 +1,26 @@
+<div class="text-left"><%= link_to 'Back', events_path, class: "btn btn-default" %></div>
+
+<h1 class="page-header text-center">
+  <%= @event.name %>
+</h1>
+<p>
+  <strong>WHERE:</strong> &nbsp; <%= @event.location %>
+</p>
+
+<p>
+  <strong>WHEN:</strong>
+  <%= @event.start_time_as_str %> - <%= @event.end_time_as_str %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency @event.price %>
+</p>
+
+<div class="desc">
+  <%= @event.description %>
+</div>
+<% if @admin %>
+<%= link_to 'Edit', edit_event_path(@event) %>
+<% end %>
+

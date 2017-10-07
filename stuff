@@ -1,0 +1,6 @@
+                <li><%= link_to "Calendar", calendar_path %></li>
+                <li><%= link_to "Events", events_path %></li>
+     
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Admin</li>
+                <li><%= link_to "New Event", new_event_path %></li>
