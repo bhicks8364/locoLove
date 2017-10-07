@@ -84,6 +84,44 @@ body, html {
     max-width: 550px;
 }
 
+.contact-list {
+    max-width: 600px;
+    margin: auto;
+}
+
 .name {
     margin-left: 15px;
+}
+
+.role {
+    margin-right: 15px;
+    font-weight: bolder;
+    // font-family: 'Covered By Your Grace', cursive;
+}
+
+.contact-list-item {
+    background-color: rgba(252, 250, 251, 0.89);
+    border: solid 2px black;
+    margin: 5px;
+    padding:10px;
+    overflow: hidden;
+}
+
+.light {
+    background-color: rgba(252, 250, 251, 0.80);
+    border: solid 2px black;
+    margin: auto;
+    padding:20px;
+    overflow: hidden;
+    max-width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    min-height: 400px;
+}
+
+.item {
+    width: 100%;
 }

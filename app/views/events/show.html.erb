@@ -1,10 +1,12 @@
 <div class="text-left"><%= link_to 'Back', events_path, class: "btn btn-default" %></div>
 
+<div class="light">
+
 <h1 class="page-header text-center">
-  <%= @event.name %>
+  <%= @event.name .present? ? @event.name.upcase : "TBD"%>
 </h1>
 <p>
-  <strong>WHERE:</strong> &nbsp; <%= @event.location %>
+  <strong>WHERE:</strong> &nbsp; <%= @event.location.present? ? @event.location : "TBD" %>
 </p>
 
 <p>
@@ -14,13 +16,14 @@
 
 <p>
   <strong>Price:</strong>
-  <%= number_to_currency @event.price %>
+  <%= @event.price.present? ? number_to_currency(@event.price) : "TBD" %>
 </p>
 
 <div class="desc">
-  <%= @event.description %>
+  <%= @event.description.present? ? @event.description : "No description available." %>
 </div>
 <% if @admin %>
 <%= link_to 'Edit', edit_event_path(@event) %>
 <% end %>
 
+</div>
